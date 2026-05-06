@@ -72,7 +72,7 @@ const statObserver = new IntersectionObserver((entries) => {
       const nums = entry.target.querySelectorAll('.stat-number');
       nums.forEach(num => {
         const raw = num.textContent.trim();
-        if (raw.includes('12')) animateCount(num, 12, '+');
+        if (raw.includes('20')) animateCount(num, 20, '+');
         else if (raw.includes('1000')) { num.textContent = '1000s'; }
         else if (raw.includes('7')) animateCount(num, 7, '+');
       });
